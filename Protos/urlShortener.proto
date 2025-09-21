@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+option csharp_namespace = "SlugMicroservice.Grpc";
+
+message GenerateSlugRequest
+{
+    string url = 1;
+}
+
+message GenerateSlugResponse
+{
+    string code = 1;
+}
+
+message ResolveSlugRequest
+{
+    string code = 1;
+}
+
+message ResolveSlugResponse
+{
+    string id = 1;
+    string url = 2;
+}
+
+service SlugMicroservice
+{
+    rpc GenerateSlug(GenerateSlugRequest) returns (GenerateSlugResponse);
+    rpc ResolveSlug(ResolveSlugRequest) returns (ResolveSlugResponse);
+}
