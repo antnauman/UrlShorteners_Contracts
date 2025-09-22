@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>SlugMicroservice.Contracts</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>ANT</Authors>
+    <Description>Url Shortener Contract</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Protobuf Include="Protos\SlugMicroservice.proto" GrpcService="Both"/>
+  </ItemGroup>
+</Project>

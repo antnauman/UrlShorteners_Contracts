@@ -1,6 +1,5 @@
 syntax = "proto3";
-
-option csharp_namespace = "SlugMicroservice.Grpc";
+option csharp_namespace = "SlugMicroservice.Proto";
 
 message GenerateSlugRequest
 {
