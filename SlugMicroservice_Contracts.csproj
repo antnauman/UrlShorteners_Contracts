@@ -6,9 +6,9 @@
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>SlugMicroservice.Contracts</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Authors>ANT</Authors>
-    <Description>Url Shortener Contract</Description>
+    <Description>Slug microservice contract</Description>
   </PropertyGroup>
 
   <ItemGroup>
