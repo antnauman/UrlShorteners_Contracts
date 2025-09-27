@@ -1,5 +1,5 @@
 syntax = "proto3";
-option csharp_namespace = "SlugMicroservice_Contract.Proto";
+option csharp_namespace = "SlugService.Contract.v01";
 
 message GenerateSlugRequest
 {
@@ -22,7 +22,7 @@ message ResolveSlugResponse
     string url = 2;
 }
 
-service SlugMicroservice_Contract
+service SlugService
 {
     rpc GenerateSlug(GenerateSlugRequest) returns (GenerateSlugResponse);
     rpc ResolveSlug(ResolveSlugRequest) returns (ResolveSlugResponse);
